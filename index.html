@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultoría Estratégica Legal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primario: '#042d59',
+            fondo: '#eeeee4',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-fondo text-primario font-sans">
+
+  <!-- Hero -->
+  <header class="relative bg-cover bg-center h-[85vh]" style="background-image: url('https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg');">
+    <div class="absolute inset-0 bg-primario bg-opacity-70"></div>
+    <div class="relative z-10 flex items-center justify-center h-full px-4 text-center text-white">
+      <div class="max-w-2xl">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Corporativo Estratégico Legal</h1>
+        <p class="mb-8 text-lg md:text-xl">Asesoría legal profesional. Te orientamos con confianza, claridad y ética.</p>
+        <a href="#contacto" class="bg-white text-primario font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">Solicita tu consulta</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Servicios -->
+  <section class="py-20 px-4 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">Áreas de especialización</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- Derecho Penal -->
+      <div class="bg-white shadow-md rounded-xl overflow-hidden">
+        <img src="https://images.pexels.com/photos/8730785/pexels-photo-8730785.jpeg" alt="Derecho Penal" class="w-full h-52 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Derecho Penal</h3>
+          <p>Te acompañamos en procesos penales con defensa legal sólida y atención personalizada. Con experiencia en el sistema penal acusatorio.</p>
+        </div>
+      </div>
+
+      <!-- Derecho Familiar y Civil -->
+      <div class="bg-white shadow-md rounded-xl overflow-hidden">
+        <img src="https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg" alt="Derecho Familiar y Civil" class="w-full h-52 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Derecho Familiar y Civil</h3>
+          <p>Resolución de conflictos familiares, herencias, divorcios. Asuntos relacionados con la propiedad privada y la posesión. Acuerdos legales con enfoque humano y práctico.</p>
+        </div>
+      </div>
+
+      <!-- Derecho Administrativo -->
+      <div class="bg-white shadow-md rounded-xl overflow-hidden">
+        <img src="https://images.pexels.com/photos/8111881/pexels-photo-8111881.jpeg" alt="Administrativo" class="w-full h-52 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Derecho Administrativo</h3>
+          <p>Defensa y asesoría legal para servidores públicos. Blindaje en el ejercicio del servicio público para prevenir sanciones administrativas y penales.</p>
+        </div>
+      </div>
+
+      <!-- Derecho Mercantil -->
+      <div class="bg-white shadow-md rounded-xl overflow-hidden">
+        <img src="https://images.pexels.com/photos/7876053/pexels-photo-7876053.jpeg" alt="Derecho Mercantil" class="w-full h-52 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Derecho Mercantil</h3>
+          <p>Recuperación de cartera y asesoría empresarial para proteger y hacer crecer tu negocio con respaldo legal.</p>
+        </div>
+      </div>
+
+      <!-- Trámites y gestión notarial -->
+      <div class="bg-white shadow-md rounded-xl overflow-hidden">
+        <img src="https://images.pexels.com/photos/8730374/pexels-photo-8730374.jpeg" alt="Trámites" class="w-full h-52 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Trámites administrativos y gestión notarial</h3>
+          <p>Te ayudamos a realizar trámites legales, administrativos y notariales con agilidad, precisión y confianza.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="bg-white py-20 px-4">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Contáctanos</h2>
+      <p class="text-center mb-10 text-lg">Cuéntanos brevemente tu situación y te responderemos con una solución clara y profesional.</p>
+      <form action="https://formsubmit.co/corporativoestrategicolegal@gmail.com" method="POST" class="space-y-6 bg-fondo p-8 rounded-xl shadow-lg">
+        <div>
+          <label for="nombre" class="block font-medium mb-1">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required class="w-full border border-gray-300 rounded px-4 py-2" />
+        </div>
+        <div>
+          <label for="email" class="block font-medium mb-1">Correo electrónico</label>
+          <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-4 py-2" />
+        </div>
+        <div>
+          <label for="telefono" class="block font-medium mb-1">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" class="w-full border border-gray-300 rounded px-4 py-2" />
+        </div>
+        <div>
+          <label for="mensaje" class="block font-medium mb-1">¿Cuál es tu situación legal?</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required class="w-full border border-gray-300 rounded px-4 py-2"></textarea>
+        </div>
+        <button type="submit" class="bg-primario text-white font-semibold px-6 py-3 rounded-full hover:bg-blue-900 transition w-full">Enviar consulta</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primario text-white py-8 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <p class="text-lg font-semibold mb-2">Consultoría Estratégica Legal</p>
+      <p>Correo de contacto: <a href="mailto:corporativoestrategicolegal@gmail.com" class="underline">corporativoestrategicolegal@gmail.com</a></p>
+      <p class="text-sm mt-4">&copy; 2025 Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
